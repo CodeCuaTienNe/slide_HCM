@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tư tưởng Hồ Chí Minh - Độc lập dân tộc và Chủ nghĩa xã hội</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vn-red': '#d43731',
+                        'vn-yellow': '#f9f350',
+                        'cream': '#fdf2dd',
+                        'dark-red': '#862921'
+                    },
+                    fontFamily: {
+                        'fraunces': ['Fraunces', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .section-height {
+            min-height: 100vh;
+        }
+        .star {
+            width: 20px;
+            height: 20px;
+            background: #f9f350;
+            position: relative;
+            transform: rotate(18deg);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+        .vietnam-flag {
+            background: linear-gradient(to bottom, #d43731 0%, #d43731 100%);
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 40px;
+        }
+        .vietnam-flag::after {
+            content: '★';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #f9f350;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .floating-animation {
+             animation: float 3s ease-in-out infinite;
+         }
+         @keyframes float {
+             0%, 100% { transform: translateY(0px); }
+             50% { transform: translateY(-10px); }
+         }
+         .no-animation {
+             animation: none !important;
+         }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-cream text-gray-800 smooth-scroll font-fraunces">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-vn-red shadow-lg z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                     <div class="vietnam-flag no-animation"></div>
+                     <h1 class="text-white font-bold text-xl font-fraunces">Tư tưởng Hồ Chí Minh</h1>
+                 </div>
+                <div class="hidden md:flex space-x-6">
+                     <a href="#intro" class="text-white hover:text-vn-yellow transition duration-300 font-fraunces">Mở đầu</a>
+                     <a href="#relationship" class="text-white hover:text-vn-yellow transition duration-300 font-fraunces">Mối quan hệ</a>
+                     <a href="#conditions" class="text-white hover:text-vn-yellow transition duration-300 font-fraunces">Điều kiện</a>
+                     <a href="#significance" class="text-white hover:text-vn-yellow transition duration-300 font-fraunces">Ý nghĩa</a>
+                     <a href="#conclusion" class="text-white hover:text-vn-yellow transition duration-300 font-fraunces">Kết luận</a>
+                     <a href="#thankyou" class="text-white hover:text-vn-yellow transition duration-300 font-fraunces">Cảm ơn</a>
+                 </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-height bg-gradient-to-br from-vn-red to-dark-red flex items-center justify-center text-white relative overflow-hidden">
+        <!-- Background Images -->
+        <div class="absolute inset-0 opacity-20">
+            <img src="HCM_img/images.jpg" alt="Hồ Chí Minh" class="w-full h-full object-cover">
+        </div>
+        <div class="text-center px-6 relative z-10 fade-in">
+             <div class="vietnam-flag mx-auto mb-6 floating-animation" style="transform: scale(1.5);"></div>
+             <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight font-fraunces text-vn-yellow">
+                 Phân tích mối quan hệ giữa độc lập dân tộc và chủ nghĩa xã hội trong tư tưởng Hồ Chí Minh
+             </h1>
+             <div class="bg-vn-yellow bg-opacity-20 p-6 rounded-lg mt-6 mb-8">
+                 <h2 class="text-2xl md:text-3xl font-bold mb-4 leading-tight font-fraunces text-white">
+                     Theo Anh/Chị độc lập dân tộc có ý nghĩa như thế nào đối với sự phát triển của một quốc gia trong bối cảnh hiện nay?
+                 </h2>
+             </div>
+            <div class="mt-8">
+                <a href="#intro" class="bg-vn-yellow text-vn-red px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition duration-300">
+                    Bắt đầu tìm hiểu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Mở đầu -->
+    <section id="intro" class="section-height bg-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-vn-red mb-8 text-center font-fraunces">1. Mở đầu</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-cream p-8 rounded-lg shadow-lg">
+                        <p class="text-lg leading-relaxed mb-6">
+                            Tư tưởng Hồ Chí Minh là sự kết hợp sáng tạo giữa <strong class="text-vn-red">chủ nghĩa Mác – Lênin</strong> và <strong class="text-vn-red">thực tiễn cách mạng Việt Nam</strong>.
+                        </p>
+                        <div class="bg-vn-red text-white p-6 rounded-lg mb-6">
+                            <p class="text-lg font-semibold">
+                                Một trong những luận điểm nổi bật của Người là mối quan hệ hữu cơ giữa độc lập dân tộc và chủ nghĩa xã hội (CNXH).
+                            </p>
+                        </div>
+                        <p class="text-lg leading-relaxed">
+                            Hồ Chí Minh khẳng định, cách mạng Việt Nam phải đi theo con đường <strong class="text-vn-red">độc lập dân tộc gắn liền với CNXH</strong>, coi đây là con đường duy nhất đúng đắn để giải phóng và phát triển đất nước.
+                        </p>
+                    </div>
+                    <div class="flex flex-col space-y-4">
+                        <img src="HCM_img/images (1).jpg" alt="Chủ tịch Hồ Chí Minh" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                        <div class="bg-vn-yellow text-vn-red p-4 rounded-lg text-center">
+                             <p class="font-semibold font-fraunces text-lg">"Không có gì quý hơn độc lập tự do"</p>
+                             <p class="text-sm font-fraunces">- Chủ tịch Hồ Chí Minh -</p>
+                             <div class="vietnam-flag mx-auto mt-2 floating-animation"></div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Mối quan hệ -->
+    <section id="relationship" class="section-height bg-gradient-to-r from-cream to-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-vn-red mb-12 text-center font-fraunces">2. Mối quan hệ giữa độc lập dân tộc và CNXH</h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Thứ nhất -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-vn-red">
+                        <h3 class="text-xl font-bold text-vn-red mb-4">Thứ nhất</h3>
+                        <h4 class="text-lg font-semibold mb-3 text-dark-red">Độc lập dân tộc là tiền đề để tiến lên CNXH</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            Theo Hồ Chí Minh, trước khi nói đến những mục tiêu cao cả của CNXH, trước hết phải giải phóng dân tộc, giành lại quyền làm chủ vận mệnh của đất nước.
+                        </p>
+                    </div>
+
+                    <!-- Thứ hai -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-vn-yellow">
+                        <h3 class="text-xl font-bold text-vn-red mb-4">Thứ hai</h3>
+                        <h4 class="text-lg font-semibold mb-3 text-dark-red">CNXH là bảo đảm vững chắc cho nền độc lập dân tộc</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            Chỉ CNXH – với bản chất nhân đạo, công bằng, dân chủ – mới tạo nền tảng vững chắc để giữ gìn thành quả cách mạng.
+                        </p>
+                    </div>
+
+                    <!-- Thứ ba -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-dark-red">
+                        <h3 class="text-xl font-bold text-vn-red mb-4">Thứ ba</h3>
+                        <h4 class="text-lg font-semibold mb-3 text-dark-red">Mối quan hệ biện chứng, không tách rời</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            Độc lập dân tộc và CNXH là hai giai đoạn trong một tiến trình cách mạng liên tục.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-vn-red text-white p-8 rounded-lg text-center">
+                    <p class="text-xl font-semibold">
+                        "Giành độc lập để tiến lên CNXH, xây dựng CNXH để bảo vệ và phát triển độc lập dân tộc"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Điều kiện -->
+    <section id="conditions" class="section-height bg-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-vn-red mb-12 text-center font-fraunces">3. Điều kiện bảo đảm độc lập dân tộc gắn liền với CNXH</h2>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <img src="HCM_img/images (2).jpg" alt="Đại đoàn kết dân tộc" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                    <img src="HCM_img/bacho26-3-c3669-20180831141243744.jpg" alt="Phong trào cách mạng" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                    <img src="HCM_img/images (3).jpg" alt="Lãnh đạo của Đảng" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                </div>
+                
+                <div class="text-center mb-8">
+                    <p class="text-lg text-gray-700">Hồ Chí Minh nêu rõ ba điều kiện cơ bản:</p>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-6 bg-cream p-6 rounded-lg">
+                        <div class="bg-vn-red text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">
+                            1
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-vn-red mb-2">Sự lãnh đạo tuyệt đối của Đảng Cộng sản</h3>
+                            <p class="text-gray-700">trong suốt tiến trình cách mạng</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6 bg-cream p-6 rounded-lg">
+                        <div class="bg-vn-yellow text-vn-red rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">
+                            2
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-vn-red mb-2">Khối đại đoàn kết dân tộc</h3>
+                            <p class="text-gray-700">với nền tảng là liên minh công – nông – trí</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6 bg-cream p-6 rounded-lg">
+                        <div class="bg-dark-red text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">
+                            3
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-vn-red mb-2">Gắn bó với phong trào cách mạng thế giới</h3>
+                            <p class="text-gray-700">góp phần vào hòa bình, độc lập, dân chủ và CNXH toàn cầu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Ý nghĩa -->
+    <section id="significance" class="section-height bg-gradient-to-br from-cream to-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-vn-red mb-8 text-center font-fraunces">4. Ý nghĩa của độc lập dân tộc đối với sự phát triển quốc gia hiện nay</h2>
+                
+                <div class="text-center mb-12">
+                    <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                        Trong bối cảnh toàn cầu hóa và hội nhập quốc tế sâu rộng, độc lập dân tộc vẫn giữ nguyên giá trị và còn mang những ý nghĩa mới:
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="bg-vn-red text-white p-3 rounded-lg mb-4 inline-block">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-vn-red mb-3">Chủ quyền toàn diện</h3>
+                        <p class="text-gray-700">không chỉ về lãnh thổ, chính trị mà cả kinh tế, văn hóa, không gian mạng, an ninh năng lượng, lương thực.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="bg-vn-yellow text-vn-red p-3 rounded-lg mb-4 inline-block">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-vn-red mb-3">Tự chủ phát triển</h3>
+                        <p class="text-gray-700">giúp quốc gia chủ động hoạch định chiến lược, tránh lệ thuộc vào một nguồn lực hoặc một đối tác.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="bg-dark-red text-white p-3 rounded-lg mb-4 inline-block">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-vn-red mb-3">Bảo vệ bản sắc và lợi ích quốc gia</h3>
+                        <p class="text-gray-700">hội nhập nhưng không hòa tan, giữ vững văn hóa và lợi ích dân tộc trước các sức ép toàn cầu.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="bg-vn-red text-white p-3 rounded-lg mb-4 inline-block">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-vn-red mb-3">Tạo nền tảng đoàn kết xã hội</h3>
+                        <p class="text-gray-700">niềm tin vào chủ quyền và độc lập là cơ sở để nhân dân ủng hộ các chính sách phát triển, từ đó tạo sức mạnh tổng hợp cho quốc gia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Kết luận -->
+    <section id="conclusion" class="section-height bg-gradient-to-br from-vn-red to-dark-red text-white py-20 relative overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 opacity-10">
+            <img src="HCM_img/grab17519thinhvuongvietnamcom702092023085344.jpg" alt="Tuyên ngôn độc lập" class="w-full h-full object-cover">
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold mb-12 text-center font-fraunces">5. Kết luận</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-white bg-opacity-10 p-8 rounded-lg">
+                        <p class="text-xl leading-relaxed mb-6">
+                            Tư tưởng Hồ Chí Minh về mối quan hệ giữa độc lập dân tộc và CNXH không chỉ định hướng cho cách mạng Việt Nam trong thế kỷ XX mà vẫn giữ nguyên giá trị trong thế kỷ XXI.
+                        </p>
+                        
+                        <div class="bg-vn-yellow text-vn-red p-6 rounded-lg mb-6">
+                            <p class="text-lg font-semibold">
+                                Độc lập dân tộc và CNXH là hai mục tiêu gắn bó hữu cơ, bổ sung và bảo đảm cho nhau.
+                            </p>
+                        </div>
+                        
+                        <p class="text-lg leading-relaxed">
+                            Trong bối cảnh hiện nay, giữ vững độc lập dân tộc là nền tảng để hội nhập hiệu quả, phát triển bền vững và khẳng định vị thế quốc gia trên trường quốc tế.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                         <img src="HCM_img/201226_115-1587188970130402471342-240x160.jpg" alt="Chủ tịch Hồ Chí Minh" class="rounded-lg shadow-lg mx-auto mb-6 w-64 h-48 object-cover">
+                         <div class="vietnam-flag mx-auto floating-animation" style="transform: scale(1.5);"></div>
+                         <p class="text-vn-yellow font-fraunces font-semibold mt-4">"Chủ tịch Hồ Chí Minh - Người cha già của dân tộc"</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Thank You Section -->
+     <section id="thankyou" class="py-20 bg-gradient-to-br from-cream to-white text-vn-red relative overflow-hidden">
+         <div class="absolute inset-0 opacity-10">
+             <img src="HCM_img/images.jpg" alt="Background" class="w-full h-full object-cover">
+         </div>
+         <div class="container mx-auto px-6 text-center relative z-10">
+             <div class="max-w-5xl mx-auto">
+                 <h2 class="text-5xl font-bold mb-12 font-fraunces text-vn-red">Cảm ơn các bạn và cô đã lắng nghe!</h2>
+                 
+                 <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+                     <div class="space-y-6">
+                         <img src="HCM_img/images.jpg" alt="Bác Hồ và Tuyên ngôn Độc lập" class="rounded-lg shadow-2xl mx-auto w-full h-80 object-cover border-4 border-vn-red">
+                         <div class="bg-vn-red text-white p-4 rounded-lg">
+                             <p class="font-fraunces font-semibold text-lg">"Tất cả mọi người đều sinh ra có quyền bình đẳng"</p>
+                             <p class="text-sm opacity-90 mt-2">Tuyên ngôn Độc lập 2/9/1945</p>
+                         </div>
+                     </div>
+                     
+                     <div class="space-y-8">
+                         <div class="bg-white p-8 rounded-lg shadow-xl border-l-4 border-vn-red">
+                             <div class="vietnam-flag mx-auto mb-4 floating-animation" style="transform: scale(1.3);"></div>
+                             <h3 class="text-2xl font-bold font-fraunces mb-4 text-vn-red">Tư tưởng Hồ Chí Minh</h3>
+                             <p class="text-lg mb-4">Ánh sáng dẫn đường cho dân tộc</p>
+                             <div class="h-1 bg-vn-yellow w-20 mx-auto"></div>
+                         </div>
+                         
+                         <div class="bg-white p-8 rounded-lg shadow-xl border-l-4 border-vn-red">
+                             <div class="vietnam-flag mx-auto mb-4 floating-animation" style="transform: scale(1.3);"></div>
+                             <h3 class="text-2xl font-bold font-fraunces mb-4 text-vn-red">Độc lập - Chủ nghĩa xã hội</h3>
+                             <p class="text-lg mb-4">Hai mục tiêu gắn bó hữu cơ</p>
+                             <div class="h-1 bg-vn-yellow w-20 mx-auto"></div>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <div class="bg-vn-red text-white p-8 rounded-lg shadow-2xl">
+                     <div class="vietnam-flag mx-auto mb-6 floating-animation" style="transform: scale(1.5);"></div>
+                     <p class="text-3xl font-fraunces font-bold mb-4">"Không có gì quý hơn độc lập tự do"</p>
+                     <p class="text-xl font-fraunces font-semibold mb-4">- Chủ tịch Hồ Chí Minh -</p>
+                     <div class="h-1 bg-vn-yellow w-32 mx-auto mb-4"></div>
+                     <p class="text-lg opacity-90">Tư tưởng này mãi mãi là kim chỉ nam cho sự phát triển của đất nước trong thời đại mới</p>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+     <!-- Footer -->
+    <footer class="bg-dark-red text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center space-x-4 mb-4">
+                <div class="vietnam-flag floating-animation"></div>
+                <p class="text-lg font-fraunces font-semibold">"Không có gì quý hơn độc lập tự do"</p>
+                <div class="vietnam-flag floating-animation"></div>
+            </div>
+            <p class="text-sm opacity-75 font-fraunces">- Chủ tịch Hồ Chí Minh -</p>
+            <p class="text-xs opacity-60 mt-2">Đảng Cộng sản Việt Nam - Quang vinh Tổ quốc - Hạnh phúc Nhân dân</p>
+        </div>
+    </footer>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>

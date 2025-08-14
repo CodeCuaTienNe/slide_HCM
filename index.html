@@ -580,9 +580,32 @@
     </section>
 
      <!-- Thank You Section -->
-     <section id="thankyou" class="section-height bg-gradient-to-br from-cream to-white text-vn-red flex items-center justify-center">
-         <div class="container mx-auto px-6 text-center">
-             <h1 class="text-8xl font-bold font-fraunces text-vn-red">Cảm ơn các bạn và cô đã lắng nghe!</h1>
+     <section id="thankyou" class="section-height bg-gradient-to-br from-cream to-white text-vn-red flex items-center justify-center relative overflow-hidden">
+         <!-- Background decorative elements -->
+         <div class="absolute inset-0 opacity-5">
+             <div class="vietnam-flag absolute top-10 left-10 floating-animation" style="transform: scale(2);"></div>
+             <div class="vietnam-flag absolute bottom-10 right-10 floating-animation" style="transform: scale(2); animation-delay: 1s;"></div>
+             <div class="vietnam-flag absolute top-1/2 left-1/4 floating-animation" style="transform: scale(1.5); animation-delay: 2s;"></div>
+         </div>
+         
+         <div class="container mx-auto px-6 text-center relative z-10">
+             <div class="max-w-4xl mx-auto">
+                 <!-- Main title -->
+                 <h1 class="text-6xl font-bold font-fraunces text-vn-red mb-8">Cảm ơn cô và các bạn đã lắng nghe!</h1>
+                 
+                 <!-- Decorative elements -->
+                 <div class="flex justify-center items-center space-x-8 mb-6">
+                     <div class="vietnam-flag" style="transform: scale(1.2);"></div>
+                     <img src="https://xdcs.cdnchinhphu.vn/zoom/600_315/446259493575335936/2023/3/10/dang-16784144943761473686155-11-0-282-434-crop-1678414546006366307104.jpg" alt="Cờ Đảng" class="w-14.1 h-12 object-cover shadow-lg">
+                     <div class="vietnam-flag" style="transform: scale(1.2); animation-delay: 0.5s;"></div>
+                 </div>
+                 
+                 <!-- Quote -->
+                 <div class="bg-vn-red text-white p-6 rounded-lg shadow-xl mx-auto max-w-2xl">
+                     <p class="text-2xl font-fraunces font-bold mb-2">"Không có gì quý hơn độc lập tự do"</p>
+                     <p class="text-lg font-fraunces opacity-90">- Chủ tịch Hồ Chí Minh -</p>
+                 </div>
+             </div>
          </div>
      </section>
 
